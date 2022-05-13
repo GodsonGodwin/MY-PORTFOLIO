@@ -5,10 +5,10 @@
     --black : #000080;
     --gray : #788097;
     --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
-    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --purple: rgba(205, 173, 224, 0.637);
+    --boxShadow : -20px 20px 30px rgba(32, 126, 40, 0.137);
     --emeraldCard: #046307;
-    --boxShadow: -79px 51px 60px rgba(32, 126, 40, 0.137);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
 .App{
@@ -23,7 +23,7 @@ button{
     color: white;
     font-size: 16px;
     padding: 11px 26px;
-    background: linear-gradient(180deg, #000080 26.71%, #09f3117a 99.36%);
+    background: linear-gradient(180deg, #d0ff14 26.71%, #cae00d 99.36%);
     box-shadow: 0px 2px 5px 1px #046307;
 }
 
@@ -34,6 +34,38 @@ button:hover{
     border: 1px solid var(--emerald);
 }
 
+button:active {
+    font-size: 15px;
+    transform: translateY(2px);
+  
+  }
+
+  /* blur */
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+  }
+
+  .blur1 {
+    top: 13rem;
+    left: -18rem;
+  }
+
+  @media screen and (max-width:480px) {
+    .App{
+      padding:0.5rem 1rem;
+    }
+    
+  }
+  
 
   
 

@@ -1,12 +1,26 @@
 import styled from 'styled-components'
+import {motion} from 'framer-motion';
+
 
 export const ServiceWrapper = styled('div')`
 padding: 0 3rem;
 display: flex;
 height: 90vh;
-margin-bottom: 10rem;
+margin-bottom: 12rem;
 margin-top: 5rem;
 
+@media screen and (max-width: 480px){
+  
+    margin-top: 15rem;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+    /* position: relative; */
+
+  
+}
+ 
 `
 export const ServiceInfo = styled('div')`
 display: flex;
@@ -33,9 +47,28 @@ gap: 2;
     margin-top: 1rem;
 }
 
+
 `
-export const ServiceCards = styled('div')`
+
+export const CardWrapper = styled('div')`
 position: relative;
+margin-left: 5rem;
+
+@media screen and (max-width: 480px) {
+*{
+        position: static;
+
+    }
+}
+`
+export const ServiceCards = styled(motion.div)`
+position:absolute;
+
+@media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+}
 
 `
 

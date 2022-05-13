@@ -13,7 +13,7 @@ text-align: center;
 background: rgba(225, 225, 225,  0.26);
 border: 7px solid var(--emeraldCard);
 box-shadow: var(--boxShadow);
-border-radius: 20px;
+border-radius: 8px;
 padding: 0px 26px 2rem 26px;
 
 img{

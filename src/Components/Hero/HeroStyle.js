@@ -3,7 +3,26 @@ import styled from 'styled-components'
 export const HeroWrapper = styled('div')`
 display: flex;
 height: 80vh;
-margin-top: 6rem;
+margin-top: 8rem;
+
+.blurBackground{
+    width: 100%;
+    transform: scale(0.5);
+    left: -10%;
+    top: -30%;
+    position: absolute;
+
+
+@media screen and (max-width: 480px) {
+display: column;
+gap: 7rem;
+height: 64rem;
+margin-bottom: 15rem;
+margin-top: 14rem;
+
+}
+ 
+}
 `
 
 export const InfoText = styled('div')`
@@ -17,18 +36,21 @@ gap: 2rem;
 export const MyInfo = styled('div')`
 display: flex;
 flex-direction: column;
+gap: 0.25rem;
 
 
 .Text1{
 color: var(--black);
 font-weight: bold;
 font-size: 3rem;
+color: #ffd700
 };
 
 .Text2{
 color: var(--emerald);
 font-weight: bold;
 font-size: 3rem;
+/* color: #ffd700 */
 };
 
 .Text3{
@@ -48,14 +70,18 @@ font-weight: bold;
 export const IconWrapper = styled('div')`
 margin-top: 3rem;
 display: flex;
-gap: 0rem;
+gap: -5rem;
 
-img{
+
+.icon{
     transform: scale(0.3);
+    
 }
 
-img:hover{
+
+.icon:hover{
     cursor: pointer;
+    
 
 }
 `
@@ -69,23 +95,48 @@ img{
 }
 
 .image1{
-    transform: scale(0.4);
-    left: -35%;
-    top: 15%;
+    transform: scale(0.37);
+    left: -14%;
+    top: 12%;
 }
 
 .image2{
-    transform: scale(0.45);
-    left: -10rem;
-    top: -17rem;
+    transform: scale(0.7);
+    left: 7rem;
+    top: -7rem;
 }
 
+.image3{
+    transform: scale(0.82);
+    left: 28%;
+    top: -4.2rem;
+}
 
+@media screen and (max-width: 480px) {
+    transform: scale(1.8);
+    left: -12rem;
+    margin-top: 18rem;
+
+    .image1{
+    left: -7%;
+    top: 5%;
+    display: none;
+}
+
+.image2{
+    left: -1rem;
+    top: -10rem;
+    display: none;
+}
 
 .image3{
-    transform: scale(0.45);
-    left: -5%;
-    top: -12.1rem;
+    /* left: -4%;
+    top: -4.6rem; */
+}
+   
+
+
+
 }
 
 `

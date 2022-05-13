@@ -29,6 +29,11 @@ font-weight: bold;
 
 export const Menu = styled('div')`
 flex: 10;
+
+@media screen and (max-width: 480px) {
+   display: none;
+}
+
 `
 export const MenuItem = styled('ul')`
 display: flex;
@@ -48,4 +53,8 @@ font-weight: bold;
 export const Button = styled('button')`
 flex: 2;
 font-weight: bold;
+
+@media screen and (max-width: 480px) {
+   display: none;
+}
 `
