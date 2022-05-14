@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavBarWrapper = styled('div')`
-height:10vh;
+height: 4rem;
 display: flex;
 justify-content: space-between;
 `
@@ -11,6 +11,7 @@ flex: 1;
 align-items: center;
 display: flex;
 gap: 2rem;
+width: 100%;
 `
 
 export const MyName = styled('div')`

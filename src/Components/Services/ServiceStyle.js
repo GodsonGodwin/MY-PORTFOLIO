@@ -1,24 +1,21 @@
 import styled from 'styled-components'
-import {motion} from 'framer-motion';
-
 
 export const ServiceWrapper = styled('div')`
 padding: 0 3rem;
 display: flex;
-height: 90vh;
-margin-bottom: 12rem;
-margin-top: 5rem;
+height: 40rem;
+margin-bottom: 15rem;
+margin-top: 12rem;
+padding-top: 3rem;
+background: blue;
 
 @media screen and (max-width: 480px){
-  
-    margin-top: 15rem;
+    display: flex;
+    margin-top: 0;
     flex-direction: column;
     gap: 5rem;
-    height: 66rem;
+    height: 80rem;
     padding: 0;
-    /* position: relative; */
-
-  
 }
  
 `
@@ -26,7 +23,7 @@ export const ServiceInfo = styled('div')`
 display: flex;
 flex-direction: column;
 position: relative;
-gap: 2;
+gap: 20px;
 
 .Text1{
     font-size: 2.5rem;
@@ -47,27 +44,10 @@ gap: 2;
     margin-top: 1rem;
 }
 
-
-`
-
-export const CardWrapper = styled('div')`
-position: relative;
-margin-left: 5rem;
-
 @media screen and (max-width: 480px) {
-*{
-        position: static;
-
+    .Text3{
+    font-size: 25px;
     }
-}
-`
-export const ServiceCards = styled(motion.div)`
-position:absolute;
-
-@media screen and (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    gap: 17rem;
 }
 
 `
@@ -75,7 +55,7 @@ position:absolute;
 export const Button = styled('button')`
 width: 8rem;
 height: 2rem;
-margin-top: 2rem;
+margin-top: 1rem;
 font-weight: bold;
 
 `

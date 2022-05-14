@@ -6,8 +6,6 @@ import {
     CircleWrapper,
     BrandWrapper,
     IconCircle,
-    BackgroundCircle1,
-    BackgroundCircle2,
     BackgroundCircle,
 } from './ProjectStyle';
 import Upwork from '../../img/Upwork.png';
@@ -37,28 +35,28 @@ const Project = () => {
 
 <BrandWrapper>
 <CircleWrapper
-animate={{rotate: 180}}
-whileHover={{rotate: 0, scale: 1.1}}
-viewport={{margin: '-40px'}}
-transition={{duration: 15, ease: "linear", loop: Infinity}}
+// animate={{rotate: 180}}
+// whileHover={{rotate: 0, scale: 1.1}}
+// viewport={{margin: '-40px'}}
+// transition={{duration: 15, ease: "linear", loop: Infinity}}
 >
-    <IconCircle style={{top:'-3rem', left:'6rem'}}>
+    <IconCircle className='icon1'>
         <img src={Upwork} alt='icons'/>
     </IconCircle>
 
-    <IconCircle style={{top:'5rem', left:'-3rem'}}>
+    <IconCircle className='icon2'>
         <img src={Fiverr} alt='icons'/>
    </IconCircle>
 
-    <IconCircle style={{top:'5rem', left:'6rem'}}>
+    <IconCircle className='icon3'>
         <img src={Moonsat} alt='icons'/>
     </IconCircle>
 
-    <IconCircle style={{top:'5rem', left:'15rem'}}>
+    <IconCircle className='icon4'>
         <img src={Clique} alt='icons'/>
     </IconCircle>
 
-    <IconCircle style={{top:'13rem', left:'6rem'}}>
+    <IconCircle className='icon5'>
         <img src={Amazon} alt='icons'/>
     </IconCircle>
 </CircleWrapper>
