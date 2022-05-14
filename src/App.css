@@ -8,7 +8,7 @@
     --purple: rgba(205, 173, 224, 0.637);
     --boxShadow : -20px 20px 30px rgba(32, 126, 40, 0.137);
     --emeraldCard: #046307;
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --smboxShadow: -5px -5px 65px rgba(0, 0, 0, 0.185);
 }
 
 .App{

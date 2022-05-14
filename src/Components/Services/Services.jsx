@@ -1,15 +1,13 @@
 import React from 'react'
-import Card from './Card'
+
 import { 
     ServiceWrapper,
     ServiceInfo,
-    ServiceCards,
     Button,
-    CardWrapper,
  } from './ServiceStyle';
- import Figma from '../../img/figma.png';
- import Logo from '../../img/logo5.png';
- import Web from '../../img/web.png';
+ 
+import DesktopCard from './DesktopCard/DesktopCard';
+import MobileCard from './MobileCard/MobileCard';
  
 
  
@@ -17,7 +15,7 @@ import {
 
 
 const Services = () => {
-    const transition = {duration:2, type: 'spring'};
+    
   return (
    <ServiceWrapper id='Services'>
        <ServiceInfo>
@@ -33,52 +31,10 @@ const Services = () => {
         <div className="blur blur1" style={{ background: "#ABF1FF94" }}></div>
        </ServiceInfo>
 
-        <CardWrapper>
-       <ServiceCards 
-       drag
-       dragConstraints={{left: -300, top: -150, right:0, bottom: 30 }}
-       dragElastic={0.7}
-       initial={{left:'25%'}} 
-       whileInView = {{left: '14rem'}}
-       transition = {transition}
-       style={{left: '14rem'}}>
-           <Card
-           img = {Web}
-           heading={"Developer"}
-           detail={"HTML, CSS, Email Developer, Javascript, Jquery, React.JS"}
-           />
-       </ServiceCards>
+    
+       <MobileCard/>
+       <DesktopCard/>
 
-       <ServiceCards 
-        drag
-        dragConstraints={{left: -400, top: -150, right: 80, bottom: 150 }}
-        dragElastic={0.7}
-        initial={{left:'11rem', top:'12rem'}} 
-        whileInView = {{left: '-4rem'}}
-        transition = {transition}
-        style={{left: '-4rem', top:'12rem'}}>
-           <Card
-           img = {Figma}
-           heading={"UI/UX "}
-           detail={"Figma"}
-           />
-       </ServiceCards>
-
-       <ServiceCards 
-        drag
-        dragConstraints={{left: -600, top: -280, right:0, bottom: 30 }}
-        dragElastic={0.7}
-        initial={{top:'19rem', left:'25rem'}} 
-        whileInView = {{left: '12rem'}}
-        transition = {transition}
-        style={{left: '14rem', top:'19rem'}}>
-           <Card
-           img = {Logo}
-           heading={"Design"}
-           detail={"Figma, Photoshop, Corel Draw"}
-           />
-       </ServiceCards>
-       </CardWrapper>
 
    </ServiceWrapper>
   )

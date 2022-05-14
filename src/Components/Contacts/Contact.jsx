@@ -22,7 +22,7 @@ const Contact = () => {
     <ContactWrapper id='Contact'>
         <TextWrapper>
             <span className='Text1'> Get in touch</span>
-            <span className='Text2'> Contact me</span>
+            <span className='Text2'> Send me an Email</span>
 
             <div className="blur blur1" style={{ background: "#ABF1FF94" }}></div>
         </TextWrapper>
@@ -30,7 +30,7 @@ const Contact = () => {
         <FormWrapper>
             <Form ref={form} onSubmit={sendEmail}>
                 <input type='text' name= 'user_name' className='userInput' placeholder='Name'/>
-                <input type='email' name= 'user_email' className='userInput' placeholder='Email'/>
+                <input type='email' name= 'user_email' className='userInput' placeholder='Your Email'/>
                 <textarea name='message' className='userInput' placeholder='Message'/>
                 {sent && <span><i>Thanks for reaching out!</i></span>}
 

@@ -2,35 +2,39 @@ import styled from 'styled-components'
 
 export const HeroWrapper = styled('div')`
 display: flex;
-height: 80vh;
-margin-top: 8rem;
-
-.blurBackground{
-    width: 100%;
-    transform: scale(0.5);
-    left: -10%;
-    top: -30%;
-    position: absolute;
-
+flex: 1;
+height: 40rem;
+margin-top: 10rem;
+margin-bottom: 5rem;
+background: red;
 
 @media screen and (max-width: 480px) {
-display: column;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
 gap: 7rem;
-height: 64rem;
-margin-bottom: 15rem;
-margin-top: 14rem;
-
+height: 50rem;
+margin-bottom: 5rem;
+margin-top: 5rem;
 }
  
-}
+
 `
 
 export const InfoText = styled('div')`
 display: flex;
 flex: 1;
 position: relative;
+margin-top:5rem;
 flex-direction: column;
 gap: 2rem;
+
+@media screen and (max-width: 480px) {
+display: column;
+gap: 3rem;
+margin-bottom: 10rem;
+margin-top: 1rem;
+}
 `
 
 export const MyInfo = styled('div')`
@@ -50,7 +54,7 @@ color: #ffd700
 color: var(--emerald);
 font-weight: bold;
 font-size: 3rem;
-/* color: #ffd700 */
+
 };
 
 .Text3{
@@ -59,32 +63,25 @@ font-weight: 700;
 font-size: 20px;
 margin-top: 10px;
 }
-`
 
+@media screen and (max-width: 480px) {
+display: column;
+gap: 1rem;
+
+.Text3{
+font-weight: 700;
+font-size: 23px;
+margin-top: 20px;
+}
+
+}
+`
 export const Button = styled('button')`
 width: 6rem;
 height: 2rem;
 font-weight: bold;
 `
 
-export const IconWrapper = styled('div')`
-margin-top: 3rem;
-display: flex;
-gap: -5rem;
-
-
-.icon{
-    transform: scale(0.3);
-    
-}
-
-
-.icon:hover{
-    cursor: pointer;
-    
-
-}
-`
 export const MediaImage=  styled('div')`
 flex: 1;
 position: relative;
@@ -94,48 +91,24 @@ img{
     z-index: 1;
 }
 
+
 .image1{
-    transform: scale(0.37);
-    left: -14%;
-    top: 12%;
+    transform: scale(0.85);
+    left: 7rem;
+    top: -1.5rem;
 }
 
 .image2{
-    transform: scale(0.7);
-    left: 7rem;
-    top: -7rem;
-}
-
-.image3{
-    transform: scale(0.82);
-    left: 28%;
-    top: -4.2rem;
+    transform: scale(1);
+    left: 8.5rem;
+    top: 1.4rem;
 }
 
 @media screen and (max-width: 480px) {
-    transform: scale(1.8);
-    left: -12rem;
-    margin-top: 18rem;
-
-    .image1{
-    left: -7%;
-    top: 5%;
-    display: none;
-}
-
-.image2{
-    left: -1rem;
-    top: -10rem;
-    display: none;
-}
-
-.image3{
-    /* left: -4%;
-    top: -4.6rem; */
-}
-   
-
-
+    display: flex;
+    flex-direction: column;
+    left: -7.28rem;
+    margin-top: -19rem;
 
 }
 

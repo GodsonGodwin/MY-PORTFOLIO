@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled('div')`
-padding: 0 3rem;
-height: 100vh;
+padding: 5rem 3rem;
+height: 30rem;
 display: flex;
 align-items: center;
-justify-content: center;
-margin-top: 7rem;
+margin-top: 12rem;
+margin-top: 8rem;
 flex-direction: column;
 gap: 1rem;
 position:relative;
+background: red;
 
 .swiper{
     width: 100%;
@@ -25,6 +26,14 @@ position:relative;
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 480px){    
+    padding: 2rem 0;
+
+    .swiper{
+    height: 80%;
+}
+  }
 
 `
 
@@ -45,6 +54,23 @@ align-self: center;
 span{
     font-size: 2rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 480px){ 
+    span{
+        font-size: 1.3rem;
+    }   
+
+    .t-blur1{
+    right: -5rem;
+    bottom: -6rem;
+}
+
+.t-blur2{
+    top: -3rem;
+    left: -1rem;
+}
+    
 }
 
 `
@@ -88,4 +114,28 @@ img{
     letter-spacing: 1.5px;
     margin-top: 10px;
 }
+
+
+@media screen and (max-width: 480px){    
+    margin-top: -1.5rem;
+    idth: 30rem;
+    height: 15rem;
+    
+    .Text2{
+    margin-top: 8px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+.Text3{
+    letter-spacing: 1.3px;
+    margin-top: 10px;
+
+}
+    img{
+        width: 70px;
+        height: 70px;
+    }
+  }
 `

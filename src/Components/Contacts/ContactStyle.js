@@ -1,10 +1,20 @@
 import styled from 'styled-components';
 
 export const  ContactWrapper = styled('div')`
-padding: 0 3rem;
+padding: 3rem;
 display: flex;
-height: 80vh;
-margin-top: 8rem;
+height: 25rem;
+margin-top: 12rem;
+margin-bottom: 10rem;
+background: blue;
+
+@media screen and (max-width: 480px) {
+        padding: 2rem 0;
+        flex-direction: column;
+        gap: 5rem;
+        margin-top: 8rem;
+        height: 35rem;
+}   
 
 `
 
@@ -13,7 +23,6 @@ display: flex;
 flex-direction: column;
 position: relative;
 flex: 1;
-/* margin-top: 4rem; */
 
 .Text1{
 color: var(--black);
@@ -26,6 +35,21 @@ color: var(--emerald);
 font-weight: bold;
 font-size: 2.5rem;
 };
+
+@media screen and (max-width: 480px) {
+    .Text1{
+text-align: center;
+font-size: 2.5rem;
+};
+
+.Text2{
+color: var(--emerald);
+font-weight: bold;
+font-size: 1.7rem;
+text-align: center;
+}
+
+}   
 `
 
 export const FormWrapper = styled('div')`
@@ -33,6 +57,10 @@ display: flex;
 justify-content: center;
 position: relative;
 flex: 1;
+
+@media screen and (max-width: 480px) {
+margin-top: 6rem;
+}
 `
 
 export const Form = styled('form')`
@@ -60,6 +88,14 @@ textarea{
     top: 1rem;
     left: 8rem;
 }
+
+@media screen and (max-width: 480px) {
+margin-top: -12rem;
+    .userInput{
+        width: 15rem;
+    }
+       
+    }
 
 `
 
