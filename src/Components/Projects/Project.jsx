@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from "react";
 import { 
     ProjectWrapper, 
     ProjectInfo,
@@ -13,32 +13,39 @@ import Fiverr from '../../img/fiverr.png';
 import Amazon from '../../img/amazon.png';
 import Moonsat from '../../img/moon.png';
 import Clique from '../../img/Clique.png';
+import { themeContext } from "../../Context";
 
 const Project = () => {
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
   return (
     <ProjectWrapper>
 <ProjectInfo>
-    <span className='Text1'> Works for all these </span>
+    <span 
+     style={{ color: darkMode ? "var(--gold)" : "" }}
+    className='Text1'> Works for all these </span>
     <span className='Text2'> Brand & Clients</span>
-    <span className='Text3'> With an eye for creative and modern design, my services are flawless <br/>
+    <span 
+     style={{ color: darkMode ? "aliceblue" : "" }}
+    className='Text3'> With an eye for creative and modern design, my services are flawless <br/>
      and of high quality with keen attention to details 
      <br/>
      my services are flawless and of high quality with keen attention to details 
      <br/>
      my services are flawless and of high quality with keen attention to details 
       </span>
-
- <Button>Download CV</Button>
  
  <div className="blur blur1" style={{ background: "#ABF1FF94" }}></div>
  </ProjectInfo>
 
 <BrandWrapper>
 <CircleWrapper
-// animate={{rotate: 180}}
-// whileHover={{rotate: 0, scale: 1.1}}
-// viewport={{margin: '-40px'}}
-// transition={{duration: 15, ease: "linear", loop: Infinity}}
+animate={{rotate: 360}}
+whileHover={{rotate: 0, scale: 1.1}}
+viewport={{margin: '-40px'}}
+transition={{duration: 15, ease: "linear", loop: Infinity}}
 >
     <IconCircle className='icon1'>
         <img src={Upwork} alt='icons'/>

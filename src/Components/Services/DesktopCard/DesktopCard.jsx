@@ -9,11 +9,19 @@ import Web from '../../../img/web.png';
 
 export const CardContainer = styled('div')`
 position: relative;
-margin-left: 7rem;
+margin-left: 5rem;
 
 
 div {
   position: absolute;
+}
+
+@media screen and (max-width: 1024px){
+    margin-left: 13rem;
+}
+
+@media screen and (max-width: 680px){
+   display: none;
 }
 
 `
@@ -54,7 +62,7 @@ const DesktopCard = () => {
         dragConstraints={{left: -400, top: -150, right: 80, bottom: 150 }}
         dragElastic={0.7}
         initial={{left:'11rem', top:'12rem'}} 
-        whileInView = {{left: '-9rem', top: '15rem'}}
+        whileInView = {{left: '-7rem', top: '15rem'}}
         transition = {transition}
         style={{left: '-9rem', top:'15rem'}}>
            <Card

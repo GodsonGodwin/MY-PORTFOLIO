@@ -1,21 +1,20 @@
 import styled from 'styled-components'
 
+
 export const HeroWrapper = styled('div')`
 display: flex;
 flex: 1;
-height: 40rem;
+height: 30rem;
 margin-top: 10rem;
 margin-bottom: 5rem;
-background: red;
+
 
 @media screen and (max-width: 480px) {
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
 width: 100%;
-gap: 7rem;
+gap: 1rem;
 height: 50rem;
-margin-bottom: 5rem;
-margin-top: 5rem;
 }
  
 
@@ -25,6 +24,7 @@ export const InfoText = styled('div')`
 display: flex;
 flex: 1;
 position: relative;
+align-items: center;
 margin-top:5rem;
 flex-direction: column;
 gap: 2rem;
@@ -32,7 +32,6 @@ gap: 2rem;
 @media screen and (max-width: 480px) {
 display: column;
 gap: 3rem;
-margin-bottom: 10rem;
 margin-top: 1rem;
 }
 `
@@ -64,6 +63,8 @@ font-size: 20px;
 margin-top: 10px;
 }
 
+
+
 @media screen and (max-width: 480px) {
 display: column;
 gap: 1rem;
@@ -77,8 +78,9 @@ margin-top: 20px;
 }
 `
 export const Button = styled('button')`
-width: 6rem;
-height: 2rem;
+width: 8rem;
+height: 3rem;
+font-size: 1.3rem;
 font-weight: bold;
 `
 
@@ -104,11 +106,23 @@ img{
     top: 1.4rem;
 }
 
+@media screen and (max-width: 960px) {
+    left: -5rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 680px) {
+    transform: scale(0.7);
+    left: -7rem;
+    margin-top: 2rem;
+}
+
+
 @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
-    left: -7.28rem;
-    margin-top: -19rem;
+    left: -3.5rem;
+    margin-top: -7rem;
 
 }
 

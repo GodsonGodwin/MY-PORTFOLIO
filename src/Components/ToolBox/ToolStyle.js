@@ -6,18 +6,35 @@ padding: 5rem 3rem;
 display: flex;
 flex-direction: column;
 gap: 5rem;
-background: red;
-height: 50rem;
+height: 45rem;
 margin-bottom: 8rem;
-margin-top: 10rem;
+margin-top: 12rem;
+align-items: center;
+
+@media screen and (max-width: 680px) {
+    flex-direction: column;
+    height: 60rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0;
+    gap: 2rem;
+  }
 `
 
 export const ToolBoxWrapper = styled('div')`
-padding: 0 3rem;
+padding: 4;
 display: flex;
-gap: 5rem;
-text-align: center;
-justify-content: center;
+gap: 1rem;
+
+
+@media screen and (max-width: 680px) {
+display: flex;
+flex-direction: column;
+gap: 3rem;
+
+
+
+}
 `
 
 export const Header =styled('div')`
@@ -27,96 +44,80 @@ display: flex;
 position: relative;
 flex-direction: column;
 
+
 .Text1{
 font-size: 3rem;
-font-weight: bold
-
-
+font-weight: bold;
 }
 
 .Text2{
-font-size: 30px;
-font-weight: bold;
+font-size: 2rem;
+font-weight: 700;
 margin-top: 1rem;
 
 }
 
 .t-blur1{
-    left: 38rem;
-    top: 40rem;
-}
-
-.t-blur2{
     top: 8rem;
     left: -6rem;
 }
 
-
-`
-
-
-export const ExperienceInfo = styled('div')`
-display: flex;
-flex-direction: column;
-position: relative;
-gap: 2;
-margin-top: 5rem;
+@media screen and (max-width: 680px) {
+padding-top: 1rem;
 
 .Text1{
-    font-size: 2.5rem;
-    color: var(--black);
+    font-size: 2rem;
     font-weight: bold;
-}
+    
+  }
 
 .Text2{
-    font-size: 2.5rem;
-    color: var(--emerald);
+    font-size: 1rem;
     font-weight: bold;
 }
 
-.Text3{
-    font-size: 15px;
-    color: var(--gray);
-    font-weight: 700;
-    margin-top: 1rem;
 }
-`
-export const Button = styled('button')`
-width: 8rem;
-height: 2rem;
-margin-top: 2rem;
-font-weight: bold;
-margin-left: 30em;
 
 `
+
+export const ExperienceInfo = styled('div')`
+display:flex;
+
+@media screen and (max-width: 680px) {
+   margin-left: 2.5rem;
+
+}
+`
+
 
 export const ToolsWrapper = styled('div')`
 position: relative;
 display: flex;
 flex-direction: column;
-gap: 8rem;
-align-items: center;
 justify-content: center;
-margin-top: -8rem;
 
+@media screen and (max-width: 1024px){
+    flex-wrap: wrap;
+    left: 5rem;
+    margin-top: -2rem;
+    transform:scale(0.8);
+    gap: 2rem;
 
-.circle1{
-background: #000080;
-top: 0rem;
-left: 18rem;
 }
 
-.circle2{
-background: #d3d3d3;
-top: 8rem;
-left: 18rem;
+
+@media screen and (max-width: 680px) {
+    flex-wrap: wrap;
+    margin-top: -2rem;
+    transform:scale(0.8);
+
 }
 
 `
 
 
 export const CircleWrapper =  styled(motion.div)`
-left: 10rem;
+left: -3rem;
 position: relative;
 width: 18rem;
 height:18rem;
@@ -127,6 +128,23 @@ top: 2rem;
 
 *{
     position: absolute;
+}
+
+@media screen and (max-width: 1024px){
+   
+    margin-left: -10rem;
+    
+
+}
+
+
+@media screen and (max-width: 680px) {
+    left: 10rem;
+}
+
+
+@media screen and (max-width: 480px) {
+    left: 7rem;
 }
 
 
@@ -151,12 +169,21 @@ img{
 
 `
 
-export const BackgroundCircle = styled('div')`
-position: absolute;
-height: 13rem;
-width: 13rem;
-border-radius: 100%;
-z-index: -1;
+export const Button = styled('button')`
+width: 10rem;
+height: 4rem;
+font-weight: bold;
+
+
+@media screen and (max-width: 680px) {
+margin-top: 1rem;
+margin-left: 3rem;
+}
+
+@media screen and (max-width: 680px) {
+margin-left: 0rem;
+
+}
 
 `
 

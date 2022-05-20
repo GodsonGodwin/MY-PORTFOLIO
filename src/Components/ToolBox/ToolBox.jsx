@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from "react";
 import { 
     ToolBoxWrapper, 
     BoxWrapper,
@@ -9,6 +9,7 @@ import {
     ExperienceInfo,
     Header,
 } from './ToolStyle';
+import { themeContext } from "../../Context";
 
 import Figma from '../../img/Figma3.png';
 import HTML from '../../img/html.png';
@@ -19,28 +20,34 @@ import ReactIcon from '../../img/react.png';
 import Adobe from '../../img/adobe.png';
 import Jquery from '../../img/jquery.png';
 import Bootstrap from '../../img/boot.png';
-import Experience from '../Experience/Experience';
+import Experience from './Experience/Experience';
 
 
 const ToolBox = () => {
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+  
+
   return (
     <BoxWrapper>
     <Header>
-    <span className='Text1'>Skills & Tools</span>
-    <span className='Text2'><i></i>The skills, tools and technologies I use to bring your products and idea to life...</span>
-    <div className="blur t-blur1" style={{ background: "#8da5da" }}></div>
-    <div className="blur t-blur2" style={{ background: "#90e476" }}></div>
+    <span
+    style={{color: darkMode?'var(--emerald)':''}} 
+    className='Text1'>Skills & Tools</span>
+    <span 
+    style={{color: darkMode?'var(--gold)':'var(--emerald)'}} 
+    className='Text2'>The skills, tools and technologies I use to bring your products and idea to life...</span>
+    <div className="blur t-blur1" style={{ background: "#90e476" }}></div>
     </Header>
     
     <ToolBoxWrapper>
+        
     <ExperienceInfo>
       <Experience/>
-
-    <div className="blur blur1" style={{ background: "#ABF1FF94" }}></div>
  </ExperienceInfo>
 
 <ToolsWrapper>
-
 <CircleWrapper
 animate={{rotate: 360}}
 whileHover={{rotate: 0, scale: 1.1}}
@@ -76,7 +83,7 @@ transition={{duration: 15, ease: "linear", loop: Infinity}}
     </IconCircle>
     
 
-    <IconCircle style={{height: '6rem', width: '6rem', top:'6rem', left:'6rem'}}>
+    <IconCircle style={{height: '7.5rem', width: '7.5rem', top:'5rem', left:'5rem'}}>
         <img src={Tools} alt='icons'/>
     </IconCircle>
 
@@ -88,11 +95,11 @@ transition={{duration: 15, ease: "linear", loop: Infinity}}
         <img src={Jscript} alt='icons'/>
     </IconCircle>
 </CircleWrapper>
-
-<Button>Download CV</Button>
 </ToolsWrapper>
 
-    </ToolBoxWrapper>
+</ToolBoxWrapper>
+    
+    <Button>Download CV</Button>
     </BoxWrapper>
     
   )

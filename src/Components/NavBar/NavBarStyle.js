@@ -4,13 +4,14 @@ export const NavBarWrapper = styled('div')`
 height: 4rem;
 display: flex;
 justify-content: space-between;
+
 `
 
 export const NavBarBrand = styled('div')`
 flex: 1;
 align-items: center;
 display: flex;
-gap: 2rem;
+gap: 1rem;
 width: 100%;
 `
 
@@ -38,8 +39,8 @@ flex: 10;
 `
 export const MenuItem = styled('ul')`
 display: flex;
-gap: 2rem;
-margin-right: 4rem;
+gap: 1rem;
+margin-right: 2rem;
 list-style-type: none;
 `
 export const NavLinks = styled('li')`
@@ -49,6 +50,10 @@ font-weight: bold;
 &:hover{
      cursor: pointer;
      color: var(--emerald);
+}
+
+@media screen and (max-width: 960px) {
+  font-size: 16px;
 }
 `
 export const Button = styled('button')`

@@ -3,13 +3,12 @@ import styled from 'styled-components'
 export const FooterWrapper = styled('div')`
  display: flex;
   align-items: center;
-  margin: -0.5rem -4rem;
+  margin: -0.6rem -4rem;
   position: relative;
   height: 10rem;
   margin-top: -4rem;
-  background: red;
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 680px){
     margin: -0.7rem -4rem;
 
     img{
@@ -36,7 +35,7 @@ font-weight: bold;
   font-size: 1rem;
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 680px){
     margin-top: 1rem;
 
     span{
@@ -51,7 +50,7 @@ export const FooterIcons = styled('div')`
 display: flex;
 gap: 1rem;
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 680px){
    
 
 }

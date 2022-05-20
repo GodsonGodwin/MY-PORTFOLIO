@@ -3,6 +3,7 @@
     --green: #07c40d;
     --emerald : #09f311 ;
     --black : #000080;
+    --gold: #ffd700;
     --gray : #788097;
     --blueCard : #DDF8FE;
     --purple: rgba(205, 173, 224, 0.637);
@@ -14,7 +15,17 @@
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);    
+    color: var(--black);   
+    
+}
+
+@media screen and (max-width: 480px) {
+ .App{
+  padding: 0.7rem;
+  align-items: center;
+  justify-content: center;
+ } 
+
 }
 
 button{
@@ -59,12 +70,7 @@ button:active {
     left: -18rem;
   }
 
-  @media screen and (max-width:480px) {
-    .App{
-      padding:0.5rem 1rem;
-    }
-    
-  }
+
   
 
   

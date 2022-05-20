@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import {motion} from 'framer-motion';
 import Card from './MobileDataCard';
 
 import Figma from '../../../img/figma.png';
@@ -10,7 +9,13 @@ import Web from '../../../img/web.png';
 export const CardContainer = styled('div')`
 display: none;
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px){
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+@media screen and (max-width: 680px) {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -20,7 +25,7 @@ display: none;
 
 const ServiceCards = styled('div')`
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
     display: flex;
     flex-direction: column;
     gap: 1rem;

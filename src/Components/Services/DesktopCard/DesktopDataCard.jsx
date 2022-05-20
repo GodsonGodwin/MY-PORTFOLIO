@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useContext } from "react";
 import styled from 'styled-components';
-
+import { themeContext } from "../../../Context";
 
 
 const CardWrapper = styled('div') `
 width: 10rem;
-height: 13rem;
+height: 14rem;
 position: absolute;
 display: flex;
 flex-direction: column;
@@ -57,12 +57,20 @@ padding-top: 8rem;
 `
 
 const Card = ({img, heading, detail}) => {
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
   return (
    <CardWrapper>
        <img  src={img} alt='Service logo'/>
        <TextWrap>
-       <span className='Text1'>{heading}</span>
-       <span className='Text2'> {detail}</span>
+       <span 
+        style={{ color: darkMode ? "var(--gold)" : "" }}
+       className='Text1'>{heading}</span>
+       <span 
+       style={{ color: darkMode ? "aliceblue" : "" }}
+       className='Text2'> {detail}</span>
        </TextWrap>
       
    </CardWrapper>
