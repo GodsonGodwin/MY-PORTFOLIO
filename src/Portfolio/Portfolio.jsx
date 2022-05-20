@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from "react";
 import { 
     PortfolioWrapper,
  } from './PortfolioStyle'
@@ -10,39 +10,23 @@ import {
  import Ecommerce from '../img/ecommerce.png';
  import HOC from '../img/hoc.png';
  import Musicapp from '../img/musicapp.png';
- 
+import MobileSlider from './MobileSlider';
+import DesktopSlider from './DesktopSlider';
+import { themeContext } from "../Context";
 
 const Portfolio = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
       <PortfolioWrapper id='Portfolio'>
-          <span className='Text1'>Recent Projects</span>
+          <span 
+          style={{ color: darkMode ? "var(--gold)" : "" }}
+          className='Text1'>Recent Projects</span>
           <span className='Text2'>Source Code on Github</span>
 
-          <Swiper
-          spaceBetween={30}
-          slidesPerView={3}
-          grabCursor={true}
-          modules={[Mousewheel]}
-          mousewheel={true}
-          className='project-slider'
-          >
-              <SwiperSlide>
-                  <img className='Project' src={Sidebar} alt='Projects'/>
-              </SwiperSlide>
-              
-              <SwiperSlide>
-                  <img className='Project' src={Ecommerce} alt='Projects'/>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <img  className='Project'src={HOC} alt='Projects'/>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <img className='Project' src={Musicapp} alt='Projects'/>
-              </SwiperSlide>
-          </Swiper>
-
+        <MobileSlider/>
+        <DesktopSlider />
         
        
       </PortfolioWrapper>

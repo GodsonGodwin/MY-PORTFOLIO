@@ -10,7 +10,6 @@ margin-top: 8rem;
 flex-direction: column;
 gap: 1rem;
 position:relative;
-background: red;
 
 .swiper{
     width: 100%;
@@ -27,8 +26,9 @@ background: red;
     justify-content: center;
 }
 
-@media screen and (max-width: 480px){    
-    padding: 2rem 0;
+@media screen and (max-width: 680px){    
+    padding: 2rem;
+    
 
     .swiper{
     height: 80%;
@@ -56,9 +56,10 @@ span{
     font-weight: bold;
 }
 
-@media screen and (max-width: 480px){ 
+@media screen and (max-width: 680px){
+     
     span{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }   
 
     .t-blur1{
@@ -80,7 +81,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-evenly;
-padding: 2rem;
+padding: 0.7rem;
 width: 30rem;
 height: 12rem;
 background: rgba(255, 255, 255, 0.26);
@@ -116,10 +117,10 @@ img{
 }
 
 
-@media screen and (max-width: 480px){    
+@media screen and (max-width: 680px){    
     margin-top: -1.5rem;
-    idth: 30rem;
-    height: 15rem;
+    width: 30rem;
+    height: 17rem;
     
     .Text2{
     margin-top: 8px;

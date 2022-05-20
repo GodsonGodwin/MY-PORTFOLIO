@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useContext } from "react";
 import { FooterContent, FooterIcons, FooterWrapper } from './FooterStyle'
 
 import FooterBackground from "../../img/footer.png";
+import DarkFooterBackground from "../../img/footer4.png";
 
 import Instagram from '@iconscout/react-unicons/icons/uil-linkedin';
 import Github from '@iconscout/react-unicons/icons/uil-github';
+import { themeContext } from "../../Context";
+
 const Footer = () => {
 
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
+    
    <FooterWrapper>
-        <img src={FooterBackground} alt="" style={{ width: "100%" }} />
+     {darkMode ? (<img src={DarkFooterBackground} alt="" style={{ width: "100%" }} />) : 
+     (<img src={FooterBackground} alt="" style={{ width: "100%" }} />)  }
+        
         <FooterContent>
         <span>Email: godsongodwinsaben1998@gmail.com</span>
         

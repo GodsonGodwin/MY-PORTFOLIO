@@ -2,16 +2,19 @@ import styled from 'styled-components'
 
 export const Wrapper = styled('div')`
 display: flex;
-flex: 1;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 5rem;
-height: 30vh;
-margin-bottom: 10rem;
+flex-wrap: wrap;
+gap: 3rem;
+
+
+@media screen and (max-width: 480px) {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
 `
 
 export const Achievement = styled('div')`
+width: 10rem;
 display: flex;
 flex-direction: column;
 align-items:center;
@@ -24,6 +27,14 @@ span{
     color: var(--green);
 }
 
+@media screen and (max-width: 480px) {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+max-width: 6rem;
+justify-content: center;
+margin-left: 0.5rem;
+}
 `
 
 export const Circle = styled('div')`
@@ -38,6 +49,7 @@ position: relative;
 font-size: 1.5rem;
 font-weight: bolder;
 margin-bottom: 2rem;
+/* z-index: 10000; */
 
 &:before{
     border-radius: 100%;

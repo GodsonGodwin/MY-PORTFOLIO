@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from "react";
 
 import { 
     ServiceWrapper,
@@ -6,6 +6,7 @@ import {
     Button,
  } from './ServiceStyle';
  
+ import { themeContext } from "../../Context";
 import DesktopCard from './DesktopCard/DesktopCard';
 import MobileCard from './MobileCard/MobileCard';
  
@@ -15,15 +16,22 @@ import MobileCard from './MobileCard/MobileCard';
 
 
 const Services = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
     
   return (
    <ServiceWrapper id='Services'>
        <ServiceInfo>
-           <span className='Text1'> My Ingenius </span>
+           <span 
+           style={{ color: darkMode ? "var(--gold)" : "" }}
+           className='Text1'> My Ingenius </span>
            <span className='Text2'> Services</span>
-           <span className='Text3'> With an eye for creative and modern design, <br/>
-           my services are flawless and of high quality with <br/> 
-           keen attention to details </span>
+           <span 
+           style={{ color: darkMode ? "aliceblue" : "" }}
+           className='Text3'> With an eye for creative and modern design,
+           my services are flawless and of high quality with keen attention to details </span>
         <a href={'/'} download>
         <Button>Download CV</Button>
         </a> 
