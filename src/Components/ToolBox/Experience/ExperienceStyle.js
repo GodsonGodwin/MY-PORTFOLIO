@@ -6,7 +6,7 @@ flex-wrap: wrap;
 gap: 3rem;
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -27,13 +27,12 @@ span{
     color: var(--green);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 max-width: 6rem;
 justify-content: center;
-margin-left: 0.5rem;
 }
 `
 

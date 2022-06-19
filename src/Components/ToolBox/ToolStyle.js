@@ -6,16 +6,17 @@ padding: 5rem 3rem;
 display: flex;
 flex-direction: column;
 gap: 5rem;
-height: 45rem;
-margin-bottom: 8rem;
-margin-top: 12rem;
+height: 42rem;
+margin-bottom: 3rem;
+margin-top: 3rem;
 align-items: center;
+
 
 @media screen and (max-width: 680px) {
     flex-direction: column;
     height: 60rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     padding: 0;
     gap: 2rem;
   }
@@ -58,8 +59,8 @@ margin-top: 1rem;
 }
 
 .t-blur1{
-    top: 8rem;
-    left: -6rem;
+    top: 20rem;
+    left: -18rem;
 }
 
 @media screen and (max-width: 680px) {
@@ -84,7 +85,17 @@ export const ExperienceInfo = styled('div')`
 display:flex;
 
 @media screen and (max-width: 680px) {
-   margin-left: 2.5rem;
+   margin-left: 6rem;
+
+}
+
+@media screen and (max-width: 480px) {
+   margin-left: 4.5rem;
+
+}
+
+@media screen and (max-width: 370px) {
+   margin-left: 3.4rem;
 
 }
 `
@@ -98,7 +109,7 @@ justify-content: center;
 
 @media screen and (max-width: 1024px){
     flex-wrap: wrap;
-    left: 5rem;
+    left: 4.5rem;
     margin-top: -2rem;
     transform:scale(0.8);
     gap: 2rem;
@@ -112,6 +123,7 @@ justify-content: center;
     transform:scale(0.8);
 
 }
+
 
 `
 
@@ -139,12 +151,16 @@ top: 2rem;
 
 
 @media screen and (max-width: 680px) {
-    left: 10rem;
+    left: 8rem;
 }
 
 
 @media screen and (max-width: 480px) {
     left: 7rem;
+}
+
+@media screen and (max-width: 370px) {
+    left: 6rem;
 }
 
 
@@ -154,7 +170,7 @@ width: 3rem;
 height: 3rem;
 position: absolute;
 border-radius: 100%;
-border: 5px solid blue;
+border: 5px solid var(--emerald);
 display: flex;
 align-items: center;
 justify-content: center; 
@@ -170,9 +186,10 @@ img{
 `
 
 export const Button = styled('button')`
-width: 10rem;
+width: 15rem;
 height: 4rem;
 font-weight: bold;
+font-size: 1.5rem;
 
 
 @media screen and (max-width: 680px) {

@@ -4,10 +4,11 @@ export const ServiceWrapper = styled('div')`
 padding: 0 3rem;
 display: flex;
 height: 40rem;
-margin-bottom: 8rem;
-margin-top: 12rem;
+margin-bottom: 3rem;
+margin-top: 7rem;
 padding-top: 3rem;
 gap: 4rem;
+
 
 @media screen and (max-width: 1024px){
     display: flex;
@@ -22,7 +23,6 @@ gap: 4rem;
     flex-direction: column;
     gap: 7rem;
     height: 105rem;
-    padding: 2rem;
 }
 
 
@@ -31,9 +31,7 @@ gap: 4rem;
     display: flex;
     margin-top: 0;
     flex-direction: column;
-    gap: 5rem;
     height: 95rem;
-    padding: 1rem;
 }
  
 `
@@ -43,7 +41,6 @@ flex-direction: column;
 position: relative;
 align-items: center;
 gap: 20px;
-margin-top: 5rem;
 width: 22rem;
 
 .Text1{
@@ -86,6 +83,7 @@ width: 100%;
 
     .Text3{
     font-size: 25px;
+    text-align: cen
     }
 }
 

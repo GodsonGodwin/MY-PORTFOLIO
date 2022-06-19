@@ -37,9 +37,9 @@ const Contact = () => {
 
         <FormWrapper>
             <Form ref={form} onSubmit={sendEmail}>
-                <input type='text' name= 'user_name' className='userInput' placeholder='Name'/>
-                <input type='email' name= 'user_email' className='userInput' placeholder='Your Email'/>
-                <textarea name='message' className='userInput' placeholder='Message'/>
+                <input type='text' name= 'user_name' className='userInput' placeholder='Name' required  />
+                <input type='email' name= 'user_email' className='userInput' placeholder='Your Email' required/>
+                <textarea name='message' className='userInput' placeholder='Message' required/>
                 {sent && <span><i>Thanks for reaching out!</i></span>}
 
                 <Button type='submit'>Send</Button>

@@ -10,6 +10,7 @@ import Testimonial from "./Components/Testimonial/Testimonial";
 import Portfolio from "./Portfolio/Portfolio";
 import {themeContext} from './Context';
 import ToolBox from "./Components/ToolBox/ToolBox";
+import ProjectModal from "./Portfolio/ProjectModal/ProjectModal";
 
 
 
@@ -21,7 +22,6 @@ function App() {
     style={{
       background : darkMode ? '#020c1b' : '',
       color: darkMode ? 'white' : '',
-      zIndex: darkMode ? '-100' : '',
     }}>
       
      <NavBar/>
@@ -33,6 +33,7 @@ function App() {
      <Testimonial/>'
      <Contact/>
      <Footer/>
+     {/* <ProjectModal/> */}
     </div>
   );
 }

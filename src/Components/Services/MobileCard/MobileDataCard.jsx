@@ -5,7 +5,7 @@ import { themeContext } from "../../../Context";
 
 const CardWrapper = styled('div') `
 width: 10rem;
-height: 15rem;
+min-height: 15rem;
 display: flex;
 flex-direction: column;
 gap: 1rem;
