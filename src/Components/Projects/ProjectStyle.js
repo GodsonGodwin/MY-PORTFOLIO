@@ -4,14 +4,14 @@ import {motion} from 'framer-motion';
 export const ProjectWrapper = styled('div')`
 padding: 5rem 3rem;
 display: flex;
-margin-bottom: 8rem;
-margin-top: 15rem;
+margin-bottom: 5rem;
+margin-top: 3rem;
 
 
 @media screen and (max-width: 680px) {
     flex-direction: column;
-    height: 45rem;
-    margin-top: 10rem;
+    height: 43rem;
+    margin-top: -2rem;
     margin-bottom: 2rem;
     padding: 0;
     gap: 1rem;
@@ -52,7 +52,6 @@ text-align: left;
 
 @media screen and (max-width: 680px) {
     width: 100%;
-    margin-top: 2rem;
 
     .Text1{
     font-size: 2.2rem;
@@ -67,6 +66,7 @@ text-align: left;
 
 .Text3{
     font-size: 20px;
+    text-align: center;
 }
 }
 `
@@ -76,14 +76,14 @@ position: relative;
 z-index: 100;
 
 .circle1{
-background: blue;
+background: var(--black);
 top: 0rem;
 left: 18rem;
 z-index: -1;
 }
 
 .circle2{
-background: var(--gold);
+background: var(--emerald);
 top: 8rem;
 left: 18rem;
 z-index: -1;

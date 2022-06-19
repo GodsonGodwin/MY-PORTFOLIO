@@ -29,12 +29,11 @@ const Project = () => {
     <span className='Text2'> Brand & Clients</span>
     <span 
      style={{ color: darkMode ? "aliceblue" : "" }}
-    className='Text3'> With an eye for creative and modern design, my services are flawless <br/>
-     and of high quality with keen attention to details 
-     <br/>
-     my services are flawless and of high quality with keen attention to details 
-     <br/>
-     my services are flawless and of high quality with keen attention to details 
+    className='Text3'> Working as a freelancer, I have delivered a quality and efficient work output to these
+    clients.
+     
+     <br/><br/>
+     I focused more on turning your idea into a highly functional, flexible and user friendly experience for your clients. 
       </span>
  
  <div className="blur blur1" style={{ background: "#ABF1FF94" }}></div>
@@ -68,7 +67,9 @@ transition={{duration: 15, ease: "linear", loop: Infinity}}
     </IconCircle>
 </CircleWrapper>
 
-<BackgroundCircle className='circle1'/>
+<BackgroundCircle 
+style={{background: darkMode?'var(--gold)':''}}
+className='circle1'/>
 <BackgroundCircle className='circle2'/>
 </BrandWrapper>
     </ProjectWrapper>

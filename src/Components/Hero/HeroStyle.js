@@ -5,14 +5,16 @@ export const HeroWrapper = styled('div')`
 display: flex;
 flex: 1;
 height: 30rem;
-margin-top: 10rem;
-margin-bottom: 5rem;
+margin-top: 8rem;
+margin-bottom: 3rem;
 
 
 @media screen and (max-width: 480px) {
 display: flex;
 flex-direction: column;
 width: 100%;
+margin-top: 5rem;
+margin-bottom: 1rem;
 gap: 1rem;
 height: 50rem;
 }
@@ -61,6 +63,7 @@ color: var(--gray);
 font-weight: 700;
 font-size: 20px;
 margin-top: 10px;
+text-align: center;
 }
 
 
@@ -78,7 +81,7 @@ margin-top: 20px;
 }
 `
 export const Button = styled('button')`
-width: 8rem;
+min-width: 10rem;
 height: 3rem;
 font-size: 1.3rem;
 font-weight: bold;
@@ -115,6 +118,10 @@ img{
     transform: scale(0.7);
     left: -7rem;
     margin-top: 2rem;
+
+    .image2{
+    top: 2rem;
+}
 }
 
 
@@ -123,6 +130,11 @@ img{
     flex-direction: column;
     left: -3.5rem;
     margin-top: -7rem;
+
+}
+
+@media screen and (max-width: 370px) {
+    left: -4.4rem;
 
 }
 

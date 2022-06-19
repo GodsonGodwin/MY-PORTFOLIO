@@ -3,18 +3,20 @@ import styled from 'styled-components';
 export const  ContactWrapper = styled('div')`
 padding: 3rem;
 display: flex;
-height: 25rem;
-margin-top: 12rem;
-margin-bottom: 10rem;
+height: 20rem;
+margin-top: -2rem;
+margin-bottom: 3rem;
 gap: 2rem;
 
 
+
 @media screen and (max-width: 680px) {
-        padding: 2rem 0;
+        padding: 0;
         flex-direction: column;
         gap: 5rem;
-        margin-top: 8rem;
-        margin-bottom: 5rem;
+        margin-top: -2rem;
+        padding-top: 0;
+        margin-bottom: 3rem;
         height: 30rem;
 }   
 
@@ -26,7 +28,6 @@ flex-direction: column;
 position: relative;
 flex: 1;
 gap: 1rem;
-margin-top: 3rem;
 
 .Text1{
 color: var(--black);
@@ -79,7 +80,7 @@ align-items: center;
     height: 2rem;
     padding: 0.3rem;
     outline: none;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--emerald);
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
@@ -105,8 +106,13 @@ margin-top: -12rem;
 `
 
 export const Button = styled('button')`
-width: 5rem;
-height: 2rem;
+width: 6rem;
+height: 3rem;
 font-weight: bold;
+font-size: 1.5rem;
 
+@media screen and (max-width: 680px) {
+padding: 0;
+       
+    }
 `

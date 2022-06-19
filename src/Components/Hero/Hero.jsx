@@ -7,12 +7,11 @@ import {
     IconWrapper,
     MediaImage,
  } from './HeroStyle'
- import Github from '../../img/git1.png';
- import LinkedIn from '../../img/in1.png';
+
  import Vector1 from '../../img/Vector1.png';
  import Profile from '../../img/Profile.png';
  import {themeContext} from '../../Context';
-
+ import {Link} from 'react-scroll';
 
 
 
@@ -25,7 +24,11 @@ const darkMode = theme.state.darkMode;
     <HeroWrapper>
         <InfoText>
             <MyInfo>
-                <span className='Text1'>Hi! I Am</span>
+                <span 
+                 style={{
+                  color: darkMode ? 'var(--gold)' : 'var(--black)',
+                }}
+                className='Text1'>Hi! I Am</span>
                 <span className='Text2'> Benjamin Godwin</span>
                 <span 
                  style={{
@@ -34,7 +37,11 @@ const darkMode = theme.state.darkMode;
                 className='Text3'> Front-end developer with super creative ideas in graphics design</span>
             </MyInfo>
 
+            <Link spy={true} to='Contact' smooth={true} >
             <Button> Hire me</Button>
+            </Link>
+
+           
         </InfoText>
 
         

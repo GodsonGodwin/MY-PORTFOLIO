@@ -35,6 +35,7 @@
 
       body{
         margin: 0;
+        background: aliceblue;
         
       }
 
@@ -44,12 +45,23 @@
       }
     }
 
+
     </style>
 
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <script>
+      function preventScroll(){
+      const element = document.querySelector("#appBody");
+      element.classList.add("stop-scroll");
+    }
+
+document.querySelector('#prevent').addEventListener('click', preventScroll);
+
+    </script>
    
   </body>
 </html>

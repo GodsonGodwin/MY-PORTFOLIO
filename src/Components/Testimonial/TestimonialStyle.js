@@ -2,22 +2,19 @@ import styled from 'styled-components';
 
 export const Wrapper = styled('div')`
 padding: 5rem 3rem;
-height: 30rem;
+/* height: 45rem; */
 display: flex;
 align-items: center;
-margin-top: 12rem;
-margin-top: 8rem;
+margin-top: 2rem;
+margin-bottom: 0rem;
 flex-direction: column;
 gap: 1rem;
 position:relative;
 
+
 .swiper{
     width: 100%;
     height: 70%;
-}
-
-.swiper-pagination-bullet-active{
-    background: var(--emerald);
 }
 
 .swiper-slide{
@@ -27,6 +24,8 @@ position:relative;
 }
 
 @media screen and (max-width: 680px){    
+    margin-top: 3rem;
+    margin-bottom: 0;
     padding: 2rem;
     
 
@@ -39,6 +38,7 @@ position:relative;
 
 export const Header =styled('div')`
 align-self: center;
+margin-bottom: 1rem;
 
 .t-blur1{
     left: 38rem;
@@ -83,7 +83,9 @@ align-items: center;
 justify-content: space-evenly;
 padding: 0.7rem;
 width: 30rem;
-height: 12rem;
+max-height: 25rem;
+margin-bottom:1.5rem;
+
 background: rgba(255, 255, 255, 0.26);
 border: 7px solid var(--blueCard);
 border-radius: 20px;
@@ -120,7 +122,7 @@ img{
 @media screen and (max-width: 680px){    
     margin-top: -1.5rem;
     width: 30rem;
-    height: 17rem;
+    max-height: 17rem;
     
     .Text2{
     margin-top: 8px;

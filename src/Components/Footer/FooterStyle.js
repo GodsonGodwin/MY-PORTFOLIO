@@ -1,3 +1,4 @@
+import UilWhatsapp from '@iconscout/react-unicons/icons/uil-whatsapp'
 import styled from 'styled-components'
 
 export const FooterWrapper = styled('div')`
@@ -6,7 +7,7 @@ export const FooterWrapper = styled('div')`
   margin: -0.6rem -4rem;
   position: relative;
   height: 10rem;
-  margin-top: -4rem;
+  margin-top: 3rem;
 
   @media screen and (max-width: 680px){
     margin: -0.7rem -4rem;
@@ -50,8 +51,12 @@ export const FooterIcons = styled('div')`
 display: flex;
 gap: 1rem;
 
-@media screen and (max-width: 680px){
-   
+`
+export const Links = styled('a')`
+  color: aliceblue;
 
-}
+  :hover{
+    transform: scale(1.2);
+  }
+  
 `

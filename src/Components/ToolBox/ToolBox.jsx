@@ -38,7 +38,8 @@ const ToolBox = () => {
     <span 
     style={{color: darkMode?'var(--gold)':'var(--emerald)'}} 
     className='Text2'>The skills, tools and technologies I use to bring your products and idea to life...</span>
-    <div className="blur t-blur1" style={{ background: "#90e476" }}></div>
+    
+    <div className="blur t-blur1" style={{ background: "#90e47690" }}></div>
     </Header>
     
     <ToolBoxWrapper>
