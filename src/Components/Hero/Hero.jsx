@@ -4,7 +4,6 @@ import {
     InfoText,
     MyInfo,
     Button,
-    IconWrapper,
     MediaImage,
  } from './HeroStyle'
 

@@ -1,8 +1,5 @@
 import profilePic1 from '../../img/Profile.jfif';
 import profilePic2 from '../../img/Profile2.jfif';
-import profilePic3 from '../../img/profile3.jpg';
-import profilePic4 from '../../img/profile4.jpg';
-import profilePic5 from '../../img/profile8.jfif';
 
 export const reviews = [
     {

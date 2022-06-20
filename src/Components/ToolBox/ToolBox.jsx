@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { 
     ToolBoxWrapper, 
     BoxWrapper,
-    Button,
     ToolsWrapper,
     CircleWrapper,
     IconCircle,

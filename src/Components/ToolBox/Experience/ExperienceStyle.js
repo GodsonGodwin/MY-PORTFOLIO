@@ -48,7 +48,6 @@ position: relative;
 font-size: 1.5rem;
 font-weight: bolder;
 margin-bottom: 2rem;
-/* z-index: 10000; */
 
 &:before{
     border-radius: 100%;
