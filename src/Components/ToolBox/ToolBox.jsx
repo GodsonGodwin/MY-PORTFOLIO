@@ -99,8 +99,6 @@ transition={{duration: 15, ease: "linear", loop: Infinity}}
 </ToolsWrapper>
 
 </ToolBoxWrapper>
-    
-    <Button>Download CV</Button>
     </BoxWrapper>
     
   )

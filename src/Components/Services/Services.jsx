@@ -32,7 +32,7 @@ const Services = () => {
            style={{ color: darkMode ? "aliceblue" : "" }}
            className='Text3'> With an eye for creative and modern design,
            my services are flawless and of high quality with keen attention to details </span>
-        <a href={'/'} download>
+        <a href='/resume/resume.pdf' download>
         <Button>Download CV</Button>
         </a> 
 
