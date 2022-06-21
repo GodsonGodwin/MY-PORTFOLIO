@@ -7,12 +7,11 @@ margin-top: 5rem;
 margin-bottom: 3rem;
 padding: 2rem 0;
 justify-content: space-between;
-background: red;
+
 
 
 @media screen and (max-width: 760px) {
-display: flex;
-flex-direction: column;
+flex-direction: column-reverse;
 width: 100%;
 justify-content: center;
 align-items: center;
@@ -23,19 +22,18 @@ gap: 2rem;
 `
 
 export const InfoText = styled('div')`
-/* background: blue; */
 width: 50%;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-/* transform: rotate(10deg); */
+transform: rotate(10deg);
 
 gap: 2rem;
 
-@media screen and (max-width: 480px) {
-display: column;
-margin-top: 1rem;
+@media screen and (max-width: 760px) {
+width: 95%;
+gap: 1rem;
 }
 `
 
@@ -46,10 +44,9 @@ gap: 0.25rem;
 text-align: center;
 
 .Text1{
-/* color: var(--blue); */
+color: var(--blue);
 font-weight: bold;
 font-size: 3rem;
-/* color: #ffd700; */
 
 };
 
@@ -68,17 +65,15 @@ margin-top: 10px;
 
 
 
-@media screen and (max-width: 480px) {
-display: column;
-gap: 1rem;
-text-align: center;
+@media screen and (max-width: 760px) {
+gap: 0.5rem;
 
 .Text1{
 font-size: 2rem;
 };
 
 .Text2{
-font-size: 2.5rem;
+font-size: 2rem;
 
 };
 
@@ -108,34 +103,9 @@ transform: rotate(350deg);
 }
 
 
-@media screen and (max-width: 960px) {
-    /* left: -5rem;
-    margin-top: 2rem;
-} */
-
-@media screen and (max-width: 680px) {
-    /* transform: scale(0.7);
-    left: -7rem;
-    margin-top: 2rem;
-
-    .image2{
-    top: 2rem;
-} */
-}
-
-
-@media screen and (max-width: 480px) {
-    /* display: flex;
-    flex-direction: column;
-    left: -3.5rem;
-    margin-top: -7rem;
-
-} */
-
-@media screen and (max-width: 370px) {
-    /* left: -4.4rem;
-
-} */
+@media screen and (max-width: 760px) {
+    width: 95%;
+} 
 
 `
 
