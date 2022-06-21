@@ -16,7 +16,7 @@ const Experience = () => {
         <Achievement>
             <Circle
             style={{color: darkMode?'var(--black)':''}}
-            > 3+</Circle>
+            > 2+</Circle>
             <span>Years of</span>
             <span className='Text'>Experience</span>
         </Achievement>
@@ -40,8 +40,8 @@ const Experience = () => {
         <Achievement>
             <Circle
             style={{color: darkMode?'var(--black)':''}}
-            > 2+</Circle>
-            <span>Companies</span>
+            > 4+</Circle>
+            <span>Collaborated</span>
             <span className='Text'>Work</span>
         </Achievement>
 

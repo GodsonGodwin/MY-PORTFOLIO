@@ -3,6 +3,7 @@ import Toggle from '../Toggle/Toggle';
 import  Bar from '@iconscout/react-unicons/icons/uil-bars';
 import {
     NavBarWrapper, 
+    Container,
     NavBarBrand, 
     MyName, 
     NavBarMenu,
@@ -47,22 +48,17 @@ const NavBar = () => {
     window.addEventListener('resize', showButton);
 
   return (
-   <NavBarWrapper
-   style={{
-    background: darkMode ? '#020c1b' : 'aliceblue',
-  }}
-   >
+   <NavBarWrapper style={{background: darkMode ? '#020c1b' : ''}}>
+       <Container className='container'>
        <NavBarBrand>
            <MyName>Godson</MyName>
-          <Toggle/>
+          
+            <Toggle/>
 
-          <MobileIcon onClick={()=>setClick(!click)
-            }> 
-            {click ? 
-            '' : 
+          <MobileIcon onClick={()=>setClick(!click)}> 
+            {click ? '' : 
             <Bar size='2rem' onClick={()=> document.body.style.overflowY='hidden'}/> }
         </MobileIcon>
-
        </NavBarBrand>
 
        <NavBarMenu 
@@ -107,6 +103,7 @@ const NavBar = () => {
            </Link>
 
        </NavBarMenu>
+       </Container>
    </NavBarWrapper>
   )
 }

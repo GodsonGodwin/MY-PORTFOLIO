@@ -2,23 +2,24 @@ import styled from "styled-components";
 import Cancel from "@iconscout/react-unicons/icons/uil-times";
 
 export const NavBarWrapper = styled("div")`
-  height: 4rem;
+background: aliceblue;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 10000;
+padding: 10px 0;
+`;
+
+export const Container = styled("div")`
   display: flex;
-  position: fixed;
-  z-index: 10000;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const NavBarBrand = styled("div")`
-  flex: 1;
   align-items: center;
   display: flex;
   gap: 1rem;
-  width: 100%;
-  padding-left: 50px;
 `;
 
 export const MyName = styled("div")`
@@ -29,55 +30,54 @@ export const MyName = styled("div")`
 
 export const NavBarMenu = styled("div")`
   display: flex;
-  flex: 1;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  padding-right: 80px;
+  padding: 0;
+  
 
   @media screen and (max-width: 960px) {
-    display: flex;
+   display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    padding: 2rem 0;
     text-align: center;
     position: fixed;
     backdrop-filter: blur(10px);
-    padding-right: 0px;
-    top: 60px;
+    top: 50px;
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
-    transition: all 0.5 ease;
+    transition:  0.7 ease-in-out;
     background: rgba(0, 0, 30, 0.8);
     color: white;
     z-index: 1000;
-    background-attachment: fixed;
+    background-attachment: fixed; 
   }
 `;
 
 export const Menu = styled("div")`
-  flex: 10;
+  display: flex;
 `;
+
 export const MenuItem = styled("ul")`
   display: flex;
-  gap: 1rem;
-  margin-right: 2rem;
+  gap: 2rem;
   list-style-type: none;
 
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 2rem;
+    
   }
 `;
 export const NavLinks = styled("li")`
-font-weight: bold;
+font-weight: 500;
 
 
 &:hover{
      cursor: pointer;
      color: var(--emerald);
+}
 
 @media screen and (max-width: 960px) {
    font-size: 25px;
@@ -88,13 +88,11 @@ font-weight: bold;
   }
 `;
 export const Button = styled("button")`
-  flex: 2;
-  font-weight: bold;
+  font-weight: 500;
 
-  /* @media screen and (max-width: 960px) {
-display: flex;
-margin: 0;
-} */
+  @media screen and (max-width: 960px) {
+display: none;
+}
 `;
 export const MobileIcon = styled.div`
   display: none;
@@ -102,9 +100,8 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 960px) {
     display: flex;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    transform: translate(-100%, 60%);
+    top: 5px;
+    right: 20px;
     color: #fff;
     cursor: pointer;
     color: var(--emerald);
@@ -116,13 +113,11 @@ export const CancelBtn = styled(Cancel)`
 
   @media screen and (max-width: 960px) {
     display: flex;
-    transform: translate(-100%, 60%);
+    margin: 0 auto;
     color: #fff;
     cursor: pointer;
     color: var(--emerald);
-    margin-left: 7rem;
     border: 2px solid white;
     border-radius: 100%;
-    padding: 10px;
   }
 `;

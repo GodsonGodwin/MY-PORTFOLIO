@@ -7,6 +7,7 @@ flex: 1;
 height: 30rem;
 margin-top: 8rem;
 margin-bottom: 3rem;
+gap: 1rem;
 
 
 @media screen and (max-width: 480px) {
@@ -33,7 +34,6 @@ gap: 2rem;
 
 @media screen and (max-width: 480px) {
 display: column;
-gap: 3rem;
 margin-top: 1rem;
 }
 `
@@ -42,13 +42,16 @@ export const MyInfo = styled('div')`
 display: flex;
 flex-direction: column;
 gap: 0.25rem;
+text-align: center;
+
 
 
 .Text1{
 color: var(--black);
 font-weight: bold;
 font-size: 3rem;
-color: #ffd700
+color: #ffd700;
+
 };
 
 .Text2{
@@ -63,7 +66,6 @@ color: var(--gray);
 font-weight: 700;
 font-size: 20px;
 margin-top: 10px;
-text-align: center;
 }
 
 
@@ -71,11 +73,19 @@ text-align: center;
 @media screen and (max-width: 480px) {
 display: column;
 gap: 1rem;
+text-align: center;
+
+.Text1{
+font-size: 2rem;
+};
+
+.Text2{
+font-size: 2.5rem;
+
+};
 
 .Text3{
-font-weight: 700;
-font-size: 23px;
-margin-top: 20px;
+margin-top: 7px;
 }
 
 }

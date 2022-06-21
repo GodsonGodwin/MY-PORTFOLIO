@@ -24,15 +24,13 @@ const darkMode = theme.state.darkMode;
         <InfoText>
             <MyInfo>
                 <span 
-                 style={{
-                  color: darkMode ? 'var(--gold)' : 'var(--black)',
-                }}
+                 style={{color: darkMode ? 'var(--gold)' : 'var(--black)',}}
                 className='Text1'>Hi! I Am</span>
+                
                 <span className='Text2'> Benjamin Godwin</span>
+                
                 <span 
-                 style={{
-                  color: darkMode ? 'aliceblue' : '',
-                }}
+                 style={{color: darkMode ? 'aliceblue' : '',}}
                 className='Text3'> Front-end developer with super creative ideas in graphics design</span>
             </MyInfo>
 
