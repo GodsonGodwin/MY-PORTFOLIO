@@ -44,7 +44,6 @@ const Services = () => {
        </ServiceInfo>
 
       <CardWrapp>
-       <MobileCard/>
        <DesktopCard/>
        </CardWrapp>
 

@@ -9,10 +9,6 @@ import Web from '../../../img/web.png';
 
 export const CardContainer = styled('div')`
 display: flex;
-
-@media screen and (max-width: 680px){
-   display: none;
-}
 `
 
 const ServiceCards = styled(motion.div)`
@@ -29,9 +25,24 @@ gap: 2rem;
   gap: 2rem;
 }
 
-@media screen and (max-width: 480px) {
-    display: none;
+@media screen and (max-width: 1100px) {
+    flex-direction: row-reverse;
     
+    
+    .card2{
+  flex-direction: row;
+  gap: 2rem;
+}
+}
+
+@media screen and (max-width: 600px){
+  flex-direction:column;
+  margin: 0 auto;
+
+  .card2{
+  flex-direction: column;
+  margin: 0 auto;
+  }
 }
 
 `

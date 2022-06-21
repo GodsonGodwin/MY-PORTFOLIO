@@ -5,26 +5,20 @@ import { themeContext } from "../../../Context";
 
 const CardWrapper = styled('div') `
 width: 15rem;
-min-height: 10rem;
-/* position: absolute; */
+min-height: 17rem;
 display: flex;
 flex-direction: column;
 gap: 1rem;
 text-align: center;
 align-items: center;
 background: rgba(225, 225, 225,  0.26);
-border: 7px solid var(--emeraldCard);
+border: 3px solid #54fc006e;
 box-shadow: var(--boxShadow);
 border-radius: 8px;
 padding: 0.5rem 1rem;
 
 img{
 transform: scale(0.8);
-
-}
-
-@media screen and (max-width: 480px){
-    width: auto;
 
 }
 `
@@ -46,7 +40,7 @@ text-align: center;
 .Text2{
     color: var(--gray);
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
 
 }
 
