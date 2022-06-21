@@ -20,7 +20,7 @@ const theme = useContext(themeContext);
 const darkMode = theme.state.darkMode;
   
   return (
-    <HeroWrapper>
+    <HeroWrapper className='container'>
         <InfoText>
             <MyInfo>
                 <span 
@@ -36,15 +36,12 @@ const darkMode = theme.state.darkMode;
 
             <Link spy={true} to='Contact' smooth={true} >
             <Button> Hire me</Button>
-            </Link>
-
-           
+            </Link>   
         </InfoText>
 
         
         <MediaImage>        
-        <img className='image1' src={Vector1} alt='Background Graphics'/>
-        <img className='image2' src={Profile} alt="My Profile"/>
+        <img className='profile' src={Profile} alt="My Profile"/>
         </MediaImage>
 
 
