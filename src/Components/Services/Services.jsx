@@ -4,6 +4,7 @@ import {
     ServiceWrapper,
     ServiceInfo,
     Button,
+    CardWrapp
  } from './ServiceStyle';
  
  import { themeContext } from "../../Context";
@@ -22,16 +23,19 @@ const Services = () => {
 
     
   return (
-   <ServiceWrapper id='Services'>
+   <ServiceWrapper className="container" id='Services'>
        <ServiceInfo>
            <span 
            style={{ color: darkMode ? "var(--gold)" : "" }}
            className='Text1'> My Ingenius </span>
            <span className='Text2'> Services</span>
+           
            <span 
            style={{ color: darkMode ? "aliceblue" : "" }}
            className='Text3'> With an eye for creative and modern design,
-           my services are flawless and of high quality with keen attention to details </span>
+           my services are flawless and of high quality with keen attention to details 
+           </span>
+
         <a href='/resume/resume.pdf' download>
         <Button>Download CV</Button>
         </a> 
@@ -39,9 +43,10 @@ const Services = () => {
         <div className="blur blur1" style={{ background: "#ABF1FF94" }}></div>
        </ServiceInfo>
 
-    
+      <CardWrapp>
        <MobileCard/>
        <DesktopCard/>
+       </CardWrapp>
 
 
    </ServiceWrapper>

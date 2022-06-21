@@ -5,7 +5,7 @@ import { themeContext } from "../../../Context";
 
 const CardWrapper = styled('div') `
 width: 10rem;
-min-height: 15rem;
+max-height: 15rem;
 display: flex;
 flex-direction: column;
 gap: 1rem;
@@ -19,7 +19,6 @@ padding: 0px 26px 2rem 26px;
 
 img{
 transform: scale(0.8);
-margin-bottom: -2rem;  
 
 }
 
@@ -37,7 +36,7 @@ margin-bottom: -2rem;
 export const TextWrap = styled('div')`
 display: flex;
 gap: 1rem;
-margin-top: 1rem;
+margin-top: 0.5rem;
 flex-direction:column;
 align-items: center;
 text-align: center;

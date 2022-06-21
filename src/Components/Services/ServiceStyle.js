@@ -1,14 +1,12 @@
 import styled from 'styled-components'
 
 export const ServiceWrapper = styled('div')`
-padding: 0 3rem;
 display: flex;
-height: 40rem;
 margin-bottom: 3rem;
-margin-top: 7rem;
-padding-top: 3rem;
-gap: 4rem;
-
+margin-top: 5rem;
+padding: 3rem 0;
+justify-content: space-between;
+/* background: red; */
 
 @media screen and (max-width: 1024px){
     display: flex;
@@ -38,10 +36,11 @@ gap: 4rem;
 export const ServiceInfo = styled('div')`
 display: flex;
 flex-direction: column;
-position: relative;
 align-items: center;
-gap: 20px;
-width: 22rem;
+justify-content: center;
+gap: 10px;
+width: 40%;
+text-align: center;
 
 .Text1{
     font-size: 2.5rem;
@@ -58,8 +57,9 @@ width: 22rem;
 .Text3{
     font-size: 30px;
     color: var(--gray);
-    font-weight: 700;
-    margin-top: 1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 1024px){
@@ -90,10 +90,20 @@ width: 100%;
 `
 
 export const Button = styled('button')`
-width: 8rem;
-height: 2rem;
-margin-top: 1rem;
-font-weight: bold;
+margin-top: 10px;
+letter-spacing: 1px;
+font-weight: 600;
+
+@media screen and (max-width: 1024px){
+width: 10rem;
+height: 4rem;
+
+}
+
+`
+
+export const CardWrapp = styled('div')`
+width: 55%;
 
 @media screen and (max-width: 1024px){
 width: 10rem;
