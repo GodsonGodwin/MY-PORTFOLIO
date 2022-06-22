@@ -27,7 +27,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-transform: rotate(10deg);
 
 gap: 2rem;
 

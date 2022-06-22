@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion';
-import Card from './DesktopDataCard';
+import Card from './CardData';
 
 import Figma from '../../../img/figma.png';
 import Logo from '../../../img/logo5.png';
@@ -9,6 +9,11 @@ import Web from '../../../img/web.png';
 
 export const CardContainer = styled('div')`
 display: flex;
+margin-left: 4rem;
+
+@media screen and (max-width: 1100px) {
+  margin-left: 0rem;
+}
 `
 
 const ServiceCards = styled(motion.div)`

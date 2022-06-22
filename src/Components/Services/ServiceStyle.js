@@ -8,6 +8,7 @@ padding: 3rem 0;
 justify-content: space-between;
 
 
+
 @media screen and (max-width: 1100px){
     flex-direction: column;
     gap: 3rem;

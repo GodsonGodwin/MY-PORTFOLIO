@@ -8,8 +8,7 @@ import {
  } from './ServiceStyle';
  
  import { themeContext } from "../../Context";
-import DesktopCard from './DesktopCard/DesktopCard';
-import MobileCard from './MobileCard/MobileCard';
+import Card from './Card/Card';
  
 
  
@@ -44,7 +43,7 @@ const Services = () => {
        </ServiceInfo>
 
       <CardWrapp>
-       <DesktopCard/>
+       <Card/>
        </CardWrapp>
 
 
