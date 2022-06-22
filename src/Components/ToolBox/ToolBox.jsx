@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { 
     ToolBoxWrapper, 
     BoxWrapper,
-    Button,
     ToolsWrapper,
     CircleWrapper,
     IconCircle,
@@ -99,8 +98,6 @@ transition={{duration: 15, ease: "linear", loop: Infinity}}
 </ToolsWrapper>
 
 </ToolBoxWrapper>
-    
-    <Button>Download CV</Button>
     </BoxWrapper>
     
   )

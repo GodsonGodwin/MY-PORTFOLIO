@@ -29,9 +29,10 @@ const Testimonial = () => {
         </Header>
 
         <Swiper
-        modules={[Mousewheel, Autoplay]}
+        modules={[Mousewheel, Autoplay, Pagination]}
         slidesPerView={1}
-        grabCursor={true}s
+        pagination={{clickable:true}}
+        grabCursor={true}
         autoplay={{
             delay: 3500,
             disableOnInteraction: true,

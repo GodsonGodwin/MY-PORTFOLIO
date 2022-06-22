@@ -8,7 +8,7 @@ flex-direction: column;
 gap: 5rem;
 height: 42rem;
 margin-bottom: 3rem;
-margin-top: 3rem;
+margin-top: 0rem;
 align-items: center;
 
 

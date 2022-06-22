@@ -2,9 +2,9 @@
 {
     --green: #07c40d;
     --emerald : #09f311 ;
-    --black : #000080;
+    --blue : #000080;
     --gold: #ffd700;
-    --gray : #788097;
+    --gray : #333539;
     --blueCard : #DDF8FE;
     --purple: rgba(205, 173, 224, 0.637);
     --boxShadow : -20px 20px 30px rgba(32, 126, 40, 0.137);
@@ -13,19 +13,14 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);   
-    
+    color: var(--blue);   
 }
 
-@media screen and (max-width: 480px) {
- .App{
-  padding: 0.7rem;
-  align-items: center;
-  justify-content: center;
- } 
-
+.container{
+  width: 90%;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 button{

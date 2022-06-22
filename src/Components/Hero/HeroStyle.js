@@ -3,38 +3,36 @@ import styled from 'styled-components'
 
 export const HeroWrapper = styled('div')`
 display: flex;
-flex: 1;
-height: 30rem;
-margin-top: 8rem;
-margin-bottom: 3rem;
-
-
-@media screen and (max-width: 480px) {
-display: flex;
-flex-direction: column;
-width: 100%;
 margin-top: 5rem;
-margin-bottom: 1rem;
-gap: 1rem;
-height: 50rem;
+margin-bottom: 3rem;
+padding: 2rem 0;
+justify-content: space-between;
+
+
+
+@media screen and (max-width: 760px) {
+flex-direction: column-reverse;
+width: 100%;
+justify-content: center;
+align-items: center;
+gap: 2rem;
 }
  
 
 `
 
 export const InfoText = styled('div')`
+width: 50%;
 display: flex;
-flex: 1;
-position: relative;
-align-items: center;
-margin-top:5rem;
 flex-direction: column;
+align-items: center;
+justify-content: center;
+
 gap: 2rem;
 
-@media screen and (max-width: 480px) {
-display: column;
-gap: 3rem;
-margin-top: 1rem;
+@media screen and (max-width: 760px) {
+width: 95%;
+gap: 1rem;
 }
 `
 
@@ -42,20 +40,19 @@ export const MyInfo = styled('div')`
 display: flex;
 flex-direction: column;
 gap: 0.25rem;
-
+text-align: center;
 
 .Text1{
-color: var(--black);
+color: var(--blue);
 font-weight: bold;
 font-size: 3rem;
-color: #ffd700
+
 };
 
 .Text2{
 color: var(--emerald);
 font-weight: bold;
 font-size: 3rem;
-
 };
 
 .Text3{
@@ -63,80 +60,51 @@ color: var(--gray);
 font-weight: 700;
 font-size: 20px;
 margin-top: 10px;
-text-align: center;
 }
 
 
 
-@media screen and (max-width: 480px) {
-display: column;
-gap: 1rem;
+@media screen and (max-width: 760px) {
+gap: 0.5rem;
+
+.Text1{
+font-size: 2rem;
+};
+
+.Text2{
+font-size: 2rem;
+
+};
 
 .Text3{
-font-weight: 700;
-font-size: 23px;
-margin-top: 20px;
+margin-top: 7px;
 }
 
 }
 `
 export const Button = styled('button')`
-min-width: 10rem;
-height: 3rem;
+min-width: 5rem;
 font-size: 1.3rem;
-font-weight: bold;
+font-weight: 500;
 `
 
 export const MediaImage=  styled('div')`
-flex: 1;
-position: relative;
+width: 40%;
+display: flex;
+justify-content: center;
+transform: rotate(350deg);
 
-img{
-    position: absolute;
-    z-index: 1;
+.profile{
+    border-radius: 35rem;
+    border: 1px solid rgba(85,252,0,0.25);
+    padding: 1rem 0 0 0;
+    background: rgba(85,252,0,0.5);
 }
 
 
-.image1{
-    transform: scale(0.85);
-    left: 7rem;
-    top: -1.5rem;
-}
-
-.image2{
-    transform: scale(1);
-    left: 8.5rem;
-    top: 1.4rem;
-}
-
-@media screen and (max-width: 960px) {
-    left: -5rem;
-    margin-top: 2rem;
-}
-
-@media screen and (max-width: 680px) {
-    transform: scale(0.7);
-    left: -7rem;
-    margin-top: 2rem;
-
-    .image2{
-    top: 2rem;
-}
-}
-
-
-@media screen and (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    left: -3.5rem;
-    margin-top: -7rem;
-
-}
-
-@media screen and (max-width: 370px) {
-    left: -4.4rem;
-
-}
+@media screen and (max-width: 760px) {
+    width: 95%;
+} 
 
 `
 

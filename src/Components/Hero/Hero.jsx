@@ -4,7 +4,6 @@ import {
     InfoText,
     MyInfo,
     Button,
-    IconWrapper,
     MediaImage,
  } from './HeroStyle'
 
@@ -21,33 +20,28 @@ const theme = useContext(themeContext);
 const darkMode = theme.state.darkMode;
   
   return (
-    <HeroWrapper>
+    <HeroWrapper className='container'>
         <InfoText>
             <MyInfo>
                 <span 
-                 style={{
-                  color: darkMode ? 'var(--gold)' : 'var(--black)',
-                }}
+                 style={{color: darkMode ? 'var(--gold)' : 'var(--black)',}}
                 className='Text1'>Hi! I Am</span>
+                
                 <span className='Text2'> Benjamin Godwin</span>
+                
                 <span 
-                 style={{
-                  color: darkMode ? 'aliceblue' : '',
-                }}
+                 style={{color: darkMode ? 'aliceblue' : '',}}
                 className='Text3'> Front-end developer with super creative ideas in graphics design</span>
             </MyInfo>
 
             <Link spy={true} to='Contact' smooth={true} >
             <Button> Hire me</Button>
-            </Link>
-
-           
+            </Link>   
         </InfoText>
 
         
         <MediaImage>        
-        <img className='image1' src={Vector1} alt='Background Graphics'/>
-        <img className='image2' src={Profile} alt="My Profile"/>
+        <img className='profile' src={Profile} alt="My Profile"/>
         </MediaImage>
 
 
